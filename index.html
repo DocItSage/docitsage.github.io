@@ -30,6 +30,24 @@
     <script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        function toggleSpoiler(elementName, changeContent = false) {
+            if(document.getElementById(elementName)  .style.display=='none') {
+                document.getElementById(elementName) .style.display=''
+                document.getElementsByClassName('fa fa-chevron-circle-right').className='fa fa-chevron-circle-down'
+                if (changeContent) {
+                    document.getElementById(elementName + '-trigger').textContent="Hide"
+                }
+            } else {
+                document.getElementById(elementName) .style.display='none'
+                document.getElementsByClassName('fa fa-chevron-circle-down').className='fa fa-chevron-circle-right'
+                if (changeContent) {
+                    document.getElementById(elementName + '-trigger').textContent="Show more details"
+                }
+            }
+        }
+    </script>
 </head>
 
 
@@ -66,10 +84,41 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title"><!-- <a href="#hook"> -->Serious Finder<!-- </a> --></h3>
+                            <h3 class="job-title" id="seriousfinder"><!-- <a href="#hook"> -->Gladiators<!-- </a> --></h3>
+                            <div class="time">2011</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Type: personal study project <br>
+                        </div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p> Simple dos-based prompt game where you could send your gladiators to the arena, buy some or train before next fight. </p>
+                        <div class="company">Used technologies: Pascal, procedural programming</div>
+                    </div>
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title" id="seriousfinder"><!-- <a href="#hook"> -->maevec.ru<!-- </a> --></h3>
+                            <div class="time">2012</div>
+                        </div><!--//upper-row-->
+                        <div class="company">Type: team <br>
+                        </div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p> Time job for mass media web-site.  </p>
+                        <p> Responsibilities: developing internal banner rotator for ads. </p>
+                        <div class="company">Used technologies: php</div>
+                    </div>
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title" id="seriousfinder"><!-- <a href="#hook"> -->Serious Finder<!-- </a> --></h3>
                             <div class="time">2013</div>
                         </div><!--//upper-row-->
-                        <div class="company">Type: closed-source, team <br>
+                        <div class="company">Type: closed-source, team, <a href="#devcup">hackaton</a> <br>
                             <span class="project-tagline"><a href="https://vk.com/devcup">Event VK group</a></span> |
                             <span class="project-tagline"><a href="https://www.dropbox.com/s/rumwna8c90ipwpi/003.jpg?dl=0">Certificate</a></span><br>
                         </div>
@@ -101,19 +150,80 @@
                 </div><!--//item-->
             </section><!--//section-->
 
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-calendar"></i>Events</h2>
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title" id="devcup"><!-- <a href="#hook"> -->DevCup by KasperskyLab<!-- </a> --></h3>
+                            <div class="time">2013</div>
+                        </div><!--//upper-row-->
+                        <div class="company">
+                            <span class="project-tagline"><a href="https://vk.com/devcup">Event VK group</a></span> |
+                            <span class="project-tagline"><a href="https://www.dropbox.com/s/rumwna8c90ipwpi/003.jpg?dl=0">Certificate</a></span><br>
+                        </div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p> An event sponsored by KaspersyLab where I'm with my team took a competition. We were working on <a href="#seriousfinder">Serious Finder</a>. </p>
+                    </div>
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title" id="devcup"><!-- <a href="#hook"> -->Russian AI Cup<!-- </a> --></h3>
+                            <div class="time">2014-2015</div>
+                        </div><!--//upper-row-->
+                        <div class="company">
+                            <span class="project-tagline"><a href="http://russianaicup.ru/">Event web-site</a></span> |
+                            <span class="project-tagline"><a href="http://2014.russianaicup.ru/">2014 contest</a></span> |
+                            <span class="project-tagline"><a href="http://2015.russianaicup.ru/">2015 contest</a></span> |
+                            <span class="project-tagline"><a href="http://russianaicup.ru/profile/LoOny">My profile</a></span> |
+                            <span class="project-tagline"><a href="https://vk.com/cupmrg">Event VK group</a></span><br>
+                        </div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p> RAIC is open artificial intelligence programming contest where antone could test himself writing a game strategy! </p>
+                    </div>
+                </div><!--//item-->
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title"><!-- <a href="#hook"> -->Moscow Masters contest<!-- </a> --></h3>
+                            <div class="time">2016 - 2017</div>
+                        </div><!--//upper-row-->
+                        <div class="company">
+                            <span class="project-tagline"><a href="https://www.dropbox.com/s/rumwna8c90ipwpi/003.jpg?dl=0">Certificate</a></span><br>
+                        </div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p> Programmer contest supported by Moscow goverment. </p>
+                        <div id="spoiler" style="display:none">
+                            Мероприятие, проводимое среди программистов радиоэлектронной области. Данное мероприятие проводится при поддержке <a href="https://www.mos.ru/">правительства Москвы</a>, Департамента науки, промышленной политики и предпринимательства, Комитета общественных связей Правительства Москвы, МФП, Префектуры ЮЗАО, председатели профсоюзных комитетов организаций участвующих в конкурсе.
+                        </div>
+                        <!-- <button title="Click to show/hide content" type="button" onclick="toggleSpoiler('spoiler')">Spoiler</button> -->
+                        <div id="details1"> <a href="#details1" id="spoiler-trigger" onclick="toggleSpoiler('spoiler', true)">Show more details</a></div>
+                    </div>
+                </div><!--//item-->
+            </section>
+
             <section class="skills-section section">
                 <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
                 <div class="skillset">
                     <div class="item">
-                        <h3 class="level-title">SQL</h3>
+                        <h3 class="level-title" > <i class="fa fa-chevron-circle-right"></i> SQL </h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="60%">
                             </div>
                         </div><!--//level-bar-->
+                        <div id="spoiler2" style="display:none">
+                            <br>Test msg</br>
+                        </div>
                     </div><!--//item-->
 
                     <div class="item">
-                        <h3 class="level-title">C# &amp; .NET framework</h3>
+                        <h3 class="level-title"> <i class="fa fa-chevron-circle-right"></i> C# &amp; .NET framework</h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="70%">
                             </div>
@@ -121,7 +231,7 @@
                     </div><!--//item-->
 
                     <div class="item">
-                        <h3 class="level-title">Squirrel</h3>
+                        <h3 class="level-title"> <i class="fa fa-chevron-circle-right"></i> Squirrel</h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="90%">
                             </div>
@@ -129,7 +239,7 @@
                     </div><!--//item-->
 
                     <div class="item">
-                        <h3 class="level-title">Bash scripts</h3>
+                        <h3 class="level-title"> <i class="fa fa-chevron-circle-right"></i> Bash scripts</h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="98%">
                             </div>
@@ -137,7 +247,7 @@
                     </div><!--//item-->
 
                     <div class="item">
-                        <h3 class="level-title">HTML5 &amp; CSS</h3>
+                        <h3 class="level-title"> HTML5 &amp; CSS</h3>
                         <div class="level-bar">
                             <div class="level-bar-inner" data-level="40%">
                             </div>
