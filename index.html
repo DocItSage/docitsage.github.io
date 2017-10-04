@@ -30,23 +30,32 @@
     <script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/responsiveslides.js"></script>
 
     <script type="text/javascript">
-        function toggleSpoiler(elementName, changeContent = false) {
+        function toggleSpoiler(elementName, hasTrigger = false) {
             if(document.getElementById(elementName)  .style.display=='none') {
-                document.getElementById(elementName) .style.display=''
+                document.getElementById(elementName) .style.display='block'
                 document.getElementsByClassName('fa fa-chevron-circle-right').className='fa fa-chevron-circle-down'
-                if (changeContent) {
+                if (hasTrigger) {
                     document.getElementById(elementName + '-trigger').textContent="Hide"
                 }
             } else {
                 document.getElementById(elementName) .style.display='none'
                 document.getElementsByClassName('fa fa-chevron-circle-down').className='fa fa-chevron-circle-right'
-                if (changeContent) {
+                if (hasTrigger) {
                     document.getElementById(elementName + '-trigger').textContent="Show more details"
                 }
             }
         }
+    </script>
+
+    <script>
+      $(function() {
+        $(".rslides").responsiveSlides({
+            maxwidth: "256",           // Integer: Max-width of the slideshow, in pixels
+        });
+      });
     </script>
 </head>
 
@@ -84,7 +93,7 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title" id="seriousfinder"><!-- <a href="#hook"> -->Gladiators<!-- </a> --></h3>
+                            <h3 class="job-title" id="gladiators"><!-- <a href="#hook"> -->Gladiators<!-- </a> --></h3>
                             <div class="time">2011</div>
                         </div><!--//upper-row-->
                         <div class="company">Type: personal study project <br>
@@ -99,7 +108,7 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title" id="seriousfinder"><!-- <a href="#hook"> -->maevec.ru<!-- </a> --></h3>
+                            <h3 class="job-title" id="maevecru"><!-- <a href="#hook"> -->maevec.ru<!-- </a> --></h3>
                             <div class="time">2012</div>
                         </div><!--//upper-row-->
                         <div class="company">Type: team <br>
@@ -120,7 +129,16 @@
                         </div><!--//upper-row-->
                         <div class="company">Type: closed-source, team, <a href="#devcup">hackaton</a> <br>
                             <span class="project-tagline"><a href="https://vk.com/devcup">Event VK group</a></span> |
-                            <span class="project-tagline"><a href="https://www.dropbox.com/s/rumwna8c90ipwpi/003.jpg?dl=0">Certificate</a></span><br>
+                            <span class="project-tagline"><a href="https://www.dropbox.com/s/rumwna8c90ipwpi/003.jpg?dl=0">Certificate</a></span> |
+                            <span class="details">
+                                <span id="sf-photo-spoiler" style="display:none">
+                                    <ul class="rslides">
+                                        <li><img src="./assets/images/serious_finder_ui.jpeg" alt=""></li>
+                                    </ul>
+                                </span>
+                                <!-- Spoiler -->
+                                <span> <a href="javascript:void(0);" id="sf-photo-spoiler-trigger" onclick="toggleSpoiler('sf-photo-spoiler', true)">Show photos</a></span>
+                            </span><br><br>
                         </div>
                     </div><!--//meta-->
                     <div class="details">
@@ -203,7 +221,7 @@
                             Мероприятие, проводимое среди программистов радиоэлектронной области. Данное мероприятие проводится при поддержке <a href="https://www.mos.ru/">правительства Москвы</a>, Департамента науки, промышленной политики и предпринимательства, Комитета общественных связей Правительства Москвы, МФП, Префектуры ЮЗАО, председатели профсоюзных комитетов организаций участвующих в конкурсе.
                         </div>
                         <!-- <button title="Click to show/hide content" type="button" onclick="toggleSpoiler('spoiler')">Spoiler</button> -->
-                        <div id="details1"> <a href="#details1" id="spoiler-trigger" onclick="toggleSpoiler('spoiler', true)">Show more details</a></div>
+                        <div id="details1"> <a href="javascript:void(0);" id="spoiler-trigger" onclick="toggleSpoiler('spoiler', true)">Show more details</a></div>
                     </div>
                 </div><!--//item-->
             </section>
