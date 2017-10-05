@@ -30,7 +30,7 @@
     <script type="text/javascript" src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/js/responsiveslides.js"></script>
+    <script type="text/javascript" src="./assets/js/min/responsiveslides.min.js"></script>
 
     <script type="text/javascript">
         function toggleSpoiler(elementName, hasTrigger = false) {
@@ -53,7 +53,22 @@
     <script>
       $(function() {
         $(".rslides").responsiveSlides({
-            maxwidth: "256",           // Integer: Max-width of the slideshow, in pixels
+              auto: false,             // Boolean: Animate automatically, true or false
+              speed: 500,             // Integer: Speed of the transition, in milliseconds
+              timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+              pager: true,            // Boolean: Show pager, true or false
+              nav: true,              // Boolean: Show navigation, true or false
+              random: false,          // Boolean: Randomize the order of the slides, true or false
+              pause: false,           // Boolean: Pause on hover, true or false
+              pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+              prevText: "<<",   // String: Text for the "previous" button
+              nextText: ">>",       // String: Text for the "next" button
+              maxwidth: "256",        // Integer: Max-width of the slideshow, in pixels
+              navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+              // manualControls: "",     // Selector: Declare custom pager navigation
+              namespace: "rslides",   // String: Change the default namespace used
+              before: function(){},   // Function: Before callback
+              after: function(){}     // Function: After callback
         });
       });
     </script>
@@ -133,11 +148,16 @@
                             <span class="details">
                                 <div id="sf-photo-spoiler" style="display:none">
                                     <ul class="rslides">
+                                        <li>
+                                            <img src="./assets/images/serious_finder_ui.jpeg" alt="">
+                                            <p class="caption">Main window UI</p>
+                                        </li>
+                                        <li><img src="./assets/images/serious_finder_ui.jpeg" alt=""></li>
                                         <li><img src="./assets/images/serious_finder_ui.jpeg" alt=""></li>
                                     </ul>
                                 </div>
                                 <!-- Spoiler -->
-                                <span> <a href="javascript:void(0);" id="sf-photo-spoiler-trigger" onclick="toggleSpoiler('sf-photo-spoiler', true)">Show photos</a></span>
+                                <span> <a href="javascript:void(0);" id="sf-photo-spoiler-trigger" onclick="toggleSpoiler('sf-photo-spoiler', true)">Show screenshots</a></span>
                             </span><br>
                         </div>
                     </div><!--//meta-->
@@ -201,7 +221,7 @@
                         </div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p> RAIC is open artificial intelligence programming contest where antone could test himself writing a game strategy! </p>
+                        <p> RAIC is open artificial intelligence programming contest where anyone could test himself writing a game strategy! </p>
                     </div>
                 </div><!--//item--><br>
 
@@ -212,13 +232,13 @@
                             <div class="time">2016 - 2017</div>
                         </div><!--//upper-row-->
                         <div class="company">
-                            <span class="project-tagline"><a href="https://www.dropbox.com/s/rumwna8c90ipwpi/003.jpg?dl=0">Certificate</a></span><br>
+                            <span class="project-tagline"><a href="https://www.dropbox.com/s/9wlmohfood0557f/002.jpg?dl=0">Certificate</a></span><br>
                         </div>
                     </div><!--//meta-->
                     <div class="details">
                         <p> Programmer contest supported by Moscow goverment. </p>
                         <div id="spoiler" style="display:none">
-                            Мероприятие, проводимое среди программистов радиоэлектронной области. Данное мероприятие проводится при поддержке <a href="https://www.mos.ru/">правительства Москвы</a>, Департамента науки, промышленной политики и предпринимательства, Комитета общественных связей Правительства Москвы, МФП, Префектуры ЮЗАО, председатели профсоюзных комитетов организаций участвующих в конкурсе.
+                            Мероприятие, проводимое среди программистов радиоэлектронной области при поддержке <a href="https://www.mos.ru/">правительства Москвы</a>, Департамента науки, промышленной политики и предпринимательства, Комитета общественных связей Правительства Москвы, МФП, Префектуры ЮЗАО, председатели профсоюзных комитетов организаций участвующих в конкурсе.
                         </div>
                         <!-- <button title="Click to show/hide content" type="button" onclick="toggleSpoiler('spoiler')">Spoiler</button> -->
                         <div id="details1"> <a href="javascript:void(0);" id="spoiler-trigger" onclick="toggleSpoiler('spoiler', true)">Show more details</a></div>
@@ -235,9 +255,6 @@
                             <div class="level-bar-inner" data-level="60%">
                             </div>
                         </div><!--//level-bar-->
-                        <div id="spoiler2" style="display:none">
-                            <br>Test msg</br>
-                        </div>
                     </div><!--//item-->
 
                     <div class="item">
