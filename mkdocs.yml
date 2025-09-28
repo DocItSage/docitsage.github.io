@@ -1,0 +1,6 @@
+site_name: Document IT, Sage
+theme:
+  name: material
+nav:
+  - Главная: index.md
+  - R&D: rnd.md
