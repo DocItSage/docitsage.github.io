@@ -1,5 +1,4 @@
 site_name: Максим Толстых - Персональная страница
-site_url: https://docitsage.github.io
 site_description: В поиске данных, инсайтов, мониторинге и анализе актуальных навыков.
 site_author: Максим Толстых aka DocItSage
 site_url: https://docitsage.github.io/
@@ -10,7 +9,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - toc.integrate
   palette:
     - scheme: default
       primary: indigo
@@ -27,7 +25,10 @@ theme:
 
 nav:
   - Главная: index.md
-  - R&D: docs/rnd.md
+  - Проекты:
+    - "R&D HH.RU":
+      - R&D: ms-vacancy/docs/rnd.md
+      - api: ms-vacancy/docs/api.md
 
 extra:
   social:
@@ -44,5 +45,12 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.tasklist
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+
+plugins:
+  - search
+  - social

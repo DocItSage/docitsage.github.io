@@ -1,2 +1,6 @@
 _includes/
 _layouts/
+.idea/*
+.cache/*
+.DS_Store
+.github/.DS_Store
