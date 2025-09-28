@@ -12,18 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: recursive  # Клонируем с подмодулями!
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      - uses: webfactory/ssh-agent@v0.7.0
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Configure Git Credentials
         run: |
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-      - name: Configure Git to use SSH
-        run: |
-          git config --global url."git@github.com:".insteadOf "https://github.com/"
       - uses: actions/setup-python@v5
         with:
           python-version: 3.x
