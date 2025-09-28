@@ -1,6 +1,49 @@
-site_name: Document IT, Sage
+site_name: Максим Толстых - Персональная страница
+site_description: В поиске данных, инсайтов, мониторинге и анализе актуальных навыков.
+site_author: Максим Толстых aka DocItSage
+site_url: https://docitsage.github.io/
+
 theme:
   name: material
+  language: ru
+  logo: assets/logo.png  # Добавьте логотип в папку `docs/assets/`
+  favicon: assets/favicon.ico
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Переключить на тёмную тему
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Переключить на светлую тему
+
 nav:
   - Главная: index.md
-  - R&D: rnd.md
+  - R&D: docs/rnd.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/docitsage
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/ваш-профиль
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
