@@ -36,10 +36,6 @@ plugins:
   - social:
       cards_layout_options:
         background_color: "#1962ff"
-        logo: docs/assets/images/logo.jpeg
-
-extra_css:
-  - stylesheets/extra.css
 
 extra:
   social:

@@ -5,54 +5,35 @@ hero: assets/images/logo.png
 hide:
   - navigation
 ---
-<div class="hero-container">
-<div class="hero">
-  <div class="hero-content">
-    <h1>Меня зовут Максим</h1>
-    <p>Fullstack-аналитик 8+ лет опыта в IT</p>
-    <p>5 лет в ритейле<br/>
+
+# Меня зовут Максим 👋
+<p>Fullstack-аналитик 8+ лет опыта в IT</p>
+<p>5 лет в ритейле<br/>
 1 год в финтехе<br/>
 2 года в производстве</p>
-    <div class="hero-buttons">
-        <a href="https://t.me/DocItSage" class="md-button md-button--primary">
-          <i class="fa-brands fa-telegram"> Написать мне в Telegram </i>
-        </a>
-        <a href="https://github.com/DocItSage" class="md-button md-button--primary">
-          <i class="fa-brands fa-github"> Профиль GitHub </i>
-        </a>
-    </div>
-  </div>
-</div>
+
+Довелось поработать с проектами от монолита в waterfall до микросервисов в Agile/Scrum.
+
+<div class="grid cards" markdown>
+
+-   :material-clock-fast:{ .lg .middle } __SpeedDating для HR__
+
+    ---
+
+    Изучите  [`блок компетенций`](#ключевые-компетенции) и свяжитесь со мной
+
+    [:fontawesome-solid-paper-plane: В Telegram](https://t.me/DocItSage){ .md-button .md-button--primary}
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __Это всего лишь Markdown__
+
+    ---
+
+    Посмотреть данный сайт и другие проекты изнутри
+
+    [:simple-github: GitHub](https://github.com/DocItSage){ .md-button }
+
 </div>
 
-<style>
-  .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 4rem 2rem;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  .hero p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .hero-buttons a {
-    text-decoration: none;
-  }
-</style>
-
----
 ## Ключевые компетенции
 
 - BPMN 2.0: моделирование и оптимизация бизнес-процессов;
@@ -71,9 +52,16 @@ hide:
 - Ведение протокола и формирование итогов встречи;
 - Прочту исходный код, при необходимости. Иногда при помощи разработчика. Знаком с ООП и некоторыми паттернами.
 
----
+###  Технологический стек
+*   Confluence, EvaWiki
+*   Jira, YouTrack
+*   MSSQL, PostgreSQL, MongoDB
+*   Camunda, Camunda Cockpit, Camunda Modeler
+*   GitHub/GitLab/Bitbucket
+*   Markdown, UML, BPMN
+
 ## Зоны роста
 
 - сложные интеграции;
 - архитектура: немного смыслю в терминологии и концепциях, но самостоятельно потрогать на проде не довелось;
-  - фасилитация встреч: большую группу тихонь не разговорю, балаган не сбалансирую -- пока не научился.
+- фасилитация встреч: большую группу тихонь не разговорю, балаган не сбалансирую -- пока не научился.
