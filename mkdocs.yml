@@ -1,4 +1,4 @@
-site_name: Максим Толстых - Персональная страница
+site_name: Максим Толстых
 site_description: В поиске данных, инсайтов, мониторинге и анализе актуальных навыков.
 site_author: Максим Толстых aka DocItSage
 site_url: https://docitsage.github.io/
@@ -9,6 +9,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
+    - navigation.top
+    - content.tooltips
   palette:
     - scheme: default
       primary: indigo
@@ -25,17 +27,25 @@ theme:
 
 nav:
   - Главная: index.md
-  - Проекты:
-    - "R&D HH.RU":
-      - R&D: ms-vacancy/docs/rnd.md
-      - api: ms-vacancy/docs/api.md
+  - "R&D HH.RU":
+    - R&D: ms-vacancy/docs/rnd.md
+
+plugins:
+  - search
+  - social:
+      cards_layout_options:
+        background_color: "#1962ff"
+        logo: docs/assets/images/logo.jpeg
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/docitsage
-    - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/ваш-профиль
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/DocItSage
 
 markdown_extensions:
   - admonition
@@ -46,13 +56,7 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.snippets
   - attr_list
   - md_in_html
-
-plugins:
-  - search
-  - social:
-      cards_layout_options:
-        background_color: "#1962ff"
