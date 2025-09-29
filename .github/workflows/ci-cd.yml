@@ -10,6 +10,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug information
+        run: |
+          echo "Checking directory structure..."
+          ls -la
+          echo "Checking SSH config..."
+          cat ~/.ssh/config || true
+          echo "Checking SSH keys..."
+          ls -la ~/.ssh || true
+          echo "Testing SSH connection..."
+          ssh -T git@github.com
       - uses: actions/checkout@v4
         #with:
         #  submodules: recursive
@@ -20,10 +30,6 @@ jobs:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - name: Test SSH connection
         run: ssh -T git@github.com
-      - name: Configure Git Credentials
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
       - name: Clone VacancyDataMiner repository
         run: |
           mkdir -p docs/ms-vacancy
@@ -40,13 +46,3 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
-      - name: Debug information
-        run: |
-          echo "Checking directory structure..."
-          ls -la
-          echo "Checking SSH config..."
-          cat ~/.ssh/config || true
-          echo "Checking SSH keys..."
-          ls -la ~/.ssh || true
-          echo "Testing SSH connection..."
-          ssh -T git@github.com
