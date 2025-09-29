@@ -27,8 +27,9 @@ theme:
 
 nav:
   - Главная: index.md
-  - "R&D HH.RU":
+  - Артефакты:
     - R&D: ms-vacancy/docs/rnd.md
+    - C4: ms-vacancy/docs/architecture.md
 
 plugins:
   - search
