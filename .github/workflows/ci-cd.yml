@@ -11,9 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        #with:
-        #  submodules: recursive
-        #  token: ${{ secrets.GITHUB_TOKEN }}
       - name: Set up SSH agent and add key
         run: |
           mkdir -p ~/.ssh
@@ -42,7 +39,7 @@ jobs:
           path: ~/.cache 
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material mkdocs-material[imaging] pillow cairosvg
+      - run: pip install mkdocs-material mkdocs-material[imaging] pillow cairosvg mkdocs-plantuml
       - name: Build and Deploy
         run: |
           mkdocs build

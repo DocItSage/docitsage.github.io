@@ -8,9 +8,9 @@ theme:
   language: ru
   features:
     - navigation.tabs
-    - navigation.sections
     - navigation.top
     - content.tooltips
+    - toc.integrate
   palette:
     - scheme: default
       primary: indigo
@@ -27,12 +27,18 @@ theme:
 
 nav:
   - Главная: index.md
+  - Проекты:
+      - ЧГ: подарочные карты
   - Артефакты:
     - R&D: ms-vacancy/docs/rnd.md
-    - C4: ms-vacancy/docs/architecture.md
+    - C4: howto.md
+    - WBS: wbs.md
+    - JSON: json.md
 
 plugins:
   - search
+  - plantuml:
+      puml_url: "http://www.plantuml.com/plantuml/"
   - social:
       cards_layout_options:
         background_color: "#1962ff"
@@ -57,3 +63,4 @@ markdown_extensions:
   - pymdownx.snippets
   - attr_list
   - md_in_html
+  - abbr
