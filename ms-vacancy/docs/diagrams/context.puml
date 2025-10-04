@@ -1,0 +1,14 @@
+@startuml VacancyMicroservice_C4_L1
+!include <C4/C4_Context>
+
+Person(user, "Аналитик", "Пользователь, запрашивающий аналитику")
+System(hh_api, "HeadHunter API", "REST API для поиска вакансий")
+System(vacancy_ms, "Vacancy Microservice", "Микросервис для сбора и анализа вакансий")
+
+Rel(user, vacancy_ms, "Запрос на аналитику")
+Rel(vacancy_ms, hh_api, "Запрос вакансий")
+Rel(hh_api, vacancy_ms, "Список вакансий")
+Rel_Neighbor(vacancy_ms, user, "Результат анализа")
+
+SHOW_LEGEND()
+@enduml

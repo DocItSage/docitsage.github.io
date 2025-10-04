@@ -1,0 +1,23 @@
+@startuml VacancyMicroservice_C4_L2
+!include <C4/C4_Container>
+
+System_Boundary(vacancy_ms, "Vacancy Microservice") {
+  Container(collector, "Vacancy Collector", "Python, Celery", "Сбор вакансий по расписанию")
+  ContainerDb(postgres, "PostgreSQL", "PostgreSQL", "Хранение вакансий")
+  Container(analyzer, "Vacancy Analyzer", "Python, FastAPI", "Анализ вакансий")
+  Container(redis, "Redis", "Redis", "Брокер сообщений для Celery")
+}
+
+System_Ext(hh_api, "HeadHunter API")
+Person_Ext(user, "Аналитик")
+
+Rel(collector, hh_api, "Запрос вакансий")
+Rel(hh_api, collector, "Список вакансий")
+Rel(collector, postgres, "Сохранение вакансий")
+Rel(collector, redis, "Очередь задач")
+Rel(analyzer, postgres, "Запрос данных")
+Rel(user, analyzer, "Запрос на аналитику")
+Rel(analyzer, user, "Результат анализа")
+
+SHOW_LEGEND()
+@enduml

@@ -1,0 +1,523 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="В поиске данных, инсайтов, мониторинге и анализе актуальных навыков.">
+      
+      
+        <meta name="author" content="Максим Толстых aka DocItSage">
+      
+      
+        <link rel="canonical" href="https://docitsage.github.io/json/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Json - Максим Толстых</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Json - Максим Толстых" >
+      
+        <meta  property="og:description"  content="В поиске данных, инсайтов, мониторинге и анализе актуальных навыков." >
+      
+        <meta  property="og:image"  content="https://docitsage.github.io/assets/images/social/json.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docitsage.github.io/json/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Json - Максим Толстых" >
+      
+        <meta  name="twitter:description"  content="В поиске данных, инсайтов, мониторинге и анализе актуальных навыков." >
+      
+        <meta  name="twitter:image"  content="https://docitsage.github.io/assets/images/social/json.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Максим Толстых" class="md-header__button md-logo" aria-label="Максим Толстых" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Максим Толстых
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Json
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Переключить на тёмную тему"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Переключить на тёмную тему" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Переключить на светлую тему"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Переключить на светлую тему" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Максим Толстых" class="md-nav__button md-logo" aria-label="Максим Толстых" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Максим Толстых
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Json</h1>
+
+<h2 id="_1">Обзор</h2>
+<p><abbr title="JavaScript Object Notation">JSON</abbr> – легковесный текстовый формат представления данных в виде ключ-значение, который используется для обмена данными.</p>
+<p>Ключи в объектах <abbr title="JavaScript Object Notation">JSON</abbr> всегда являются строками, а значения могут быть следующих типов:</p>
+<ul>
+<li>строка</li>
+<li>число</li>
+<li>объект (объект <abbr title="JavaScript Object Notation">JSON</abbr>)</li>
+<li>массив</li>
+<li>boolean</li>
+<li>null</li>
+</ul>
+<p>Значения <abbr title="JavaScript Object Notation">JSON</abbr> не могут быть следующих типов:</p>
+<ul>
+<li>функция</li>
+<li>дата</li>
+<li>undefined</li>
+</ul>
+<p><strong>Вопрос</strong>: Как же быть, если мы хотим передавать дату?
+<br/><strong>Ответ</strong>: В виде строки. Наиболее распространенным и общепринятым является формат <a href="https://ru.wikipedia.org/wiki/ISO_8601">ISO 8601</a>:
+<code>"2024-04-13T08:30:00Z"</code></p>
+<h2 id="_2">Безопасность</h2>
+<h3 id="_3">Предотвращение атак</h3>
+<p>Основой безопасного использования <abbr title="JavaScript Object Notation">JSON</abbr> являются <a href="#_4">санитизация</a>, <a href="#_5">экранирование</a> и <a href="#_6">валидация данных</a>. Эти инструменты универсальны и эффективны против всех описанных выше видов атак.</p>
+<h4 id="_4">Санитизация данных</h4>
+<p>Санитизация данных — это процесс очистки данных от вредоносных или нежелательных элементов. В контексте веб-разработки это обычно включает удаление или замену символов, которые могут быть использованы для проведения атак, таких как вставка SQL, XSS или <abbr title="JavaScript Object Notation">JSON</abbr> Injection. </p>
+<p>Отсеивать “опасные символы” нет смысла, потому что некоторые символы опасны в одном контексте и совершенно безопасны в другом.</p>
+<p>С санитизацией есть проблема: удаление символов может приводить к искажениям. Например <code>Виталий &amp; Татьяна</code> превратится в <code>Виталий Татьяна</code>.</p>
+<p>Решением может стать экранирование.</p>
+<h4 id="_5">Экранирование</h4>
+<p>Процесс замены специальных или управляющих символов внутри строки на их эквиваленты с помощью обратной косой черты (\), например, \" для кавычек или \\n для переноса строки. Это гарантирует, что эти символы не будут неправильно интерпретированы парсером <abbr title="JavaScript Object Notation">JSON</abbr>, обеспечивая корректность и безопасность данных <abbr title="JavaScript Object Notation">JSON</abbr>. </p>
+<h4 id="_6">Валидация данных</h4>
+<p>Валидация — процесс проверки данных на соответствие определенным критериям или правилам. В контексте <abbr title="JavaScript Object Notation">JSON</abbr> валидация обычно включает в себя проверку следующего:</p>
+<ul>
+<li>Соответствие структуры и типов данных предполагаемым. Например, если ожидается объект с определенными полями, валидация должна убедиться, что все эти поля присутствуют и имеют правильные типы данных.</li>
+<li>Отсутствие нежелательных символов или паттернов, которые могут вызвать проблемы при обработке данных (например, вредоносный код).</li>
+<li>Соответствие данных бизнес-правилам. Например, валидация может включать проверку того, что значение определенного поля находится в допустимом диапазоне.</li>
+</ul>
+<h2 id="_7">Пример</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p>Пример <abbr title="JavaScript Object Notation">JSON</abbr></p>
+<hr />
+<div class="language-json highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="err">@s</span><span class="kc">tart</span><span class="err">jso</span><span class="kc">n</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="p">{</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="nt">&quot;null&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="nt">&quot;true&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nt">&quot;false&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="nt">&quot;JSON_Number&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mf">-1.1</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;&lt;color:green&gt;TBC&quot;</span><span class="p">],</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="nt">&quot;JSON_String&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a\nb\rc\td &lt;color:green&gt;TBC...&quot;</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="nt">&quot;JSON_Object&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;{}&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;k_int&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;k_str&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;abc&quot;</span><span class="p">,</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">  </span><span class="nt">&quot;k_obj&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;k&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;v&quot;</span><span class="p">}</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="p">},</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="nt">&quot;JSON_Array&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">  </span><span class="p">[],</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">  </span><span class="p">[</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="kc">false</span><span class="p">],</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">  </span><span class="p">[</span><span class="mi">-1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">],</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="w">  </span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;c&quot;</span><span class="p">],</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="w">  </span><span class="p">[</span><span class="s2">&quot;mix&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;k&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;v&quot;</span><span class="p">}]</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="p">]</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="p">}</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="err">@e</span><span class="kc">n</span><span class="err">djso</span><span class="kc">n</span>
+</span></code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>Визуализация в PlantUml</p>
+<hr />
+<p><div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="JSON" height="507px" preserveAspectRatio="xMidYMid meet" style="width:536px;height:507px;background:#FFFFFF;" version="1.1" viewBox="0 0 536 507" width="536px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#F1F1F1" height="142.0781" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="218.8232" x="10" y="17.4609"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="29.5313" x="15" y="32.4561">null</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.4014" x="133.6025" y="32.4561">␀</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="17.4609" y2="37.7578"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="37.7578" y2="37.7578"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="33.0586" x="15" y="52.7529">true</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.7324" x="133.6025" y="52.7529">☑ true</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="37.7578" y2="58.0547"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="58.0547" y2="58.0547"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38.165" x="15" y="73.0498">false</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50.3057" x="133.6025" y="73.0498">☐ false</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="58.0547" y2="78.3516"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="78.3516" y2="78.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108.6025" x="15" y="93.3467">JSON_Number</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="133.6025" y="93.3467">   </text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="78.3516" y2="98.6484"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="98.6484" y2="98.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94.377" x="15" y="113.6436">JSON_String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25.1631" x="133.6025" y="113.6436">a
+bc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.8867" x="169.2041" y="113.6436">d</text><text fill="#008000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41.2822" x="182.541" y="113.6436">TBC...</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="98.6484" y2="118.9453"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="118.9453" y2="118.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="97.1182" x="15" y="133.9404">JSON_Object</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="133.6025" y="133.9404">   </text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="118.9453" y2="139.2422"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="139.2422" y2="139.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89.127" x="15" y="154.2373">JSON_Array</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="133.6025" y="154.2373">   </text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="139.2422" y2="159.5391"/><rect fill="none" height="142.0781" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="218.8232" x="10" y="17.4609"/><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="37.9316" x="290.5" y="10"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.959" x="295.5" y="24.9951">-1</text><line style="stroke:#000000;stroke-width:1;" x1="290.5" x2="328.4316" y1="30.2969" y2="30.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27.3164" x="295.5" y="45.292">-1.1</text><line style="stroke:#000000;stroke-width:1;" x1="290.5" x2="328.4316" y1="50.5938" y2="50.5938"/><text fill="#008000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27.9316" x="295.5" y="65.5889">TBC</text><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="37.9316" x="290.5" y="10"/><rect fill="#F1F1F1" height="81.1875" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="87.4707" x="266" y="88.9063"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="19.9336" x="271" y="103.9014">{}</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="321.749" y="103.9014">   </text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="88.9063" y2="109.2031"/><line style="stroke:#000000;stroke-width:1;" x1="266" x2="353.4707" y1="109.2031" y2="109.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="37.7686" x="271" y="124.1982">k_int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26.7217" x="321.749" y="124.1982">123</text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="109.2031" y2="129.5"/><line style="stroke:#000000;stroke-width:1;" x1="266" x2="353.4707" y1="129.5" y2="129.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38.2402" x="271" y="144.4951">k_str</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25.1631" x="321.749" y="144.4951">abc</text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="129.5" y2="149.7969"/><line style="stroke:#000000;stroke-width:1;" x1="266" x2="353.4707" y1="149.7969" y2="149.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="40.749" x="271" y="164.792">k_obj</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="321.749" y="164.792">   </text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="149.7969" y2="170.0938"/><rect fill="none" height="81.1875" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="87.4707" x="266" y="88.9063"/><rect fill="#F1F1F1" height="15" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="30" x="412" y="92"/><rect fill="none" height="15" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="30" x="412" y="92"/><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="37.5957" x="401" y="125.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="9.3105" x="406" y="140.3467">k</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.2852" x="425.3105" y="140.3467">v</text><line style="stroke:#000000;stroke-width:1;" x1="420.3105" x2="420.3105" y1="125.3516" y2="145.6484"/><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="37.5957" x="401" y="125.3516"/><rect fill="#F1F1F1" height="101.4844" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="23.3506" x="298" y="206.7578"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="221.7529">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="227.0547" y2="227.0547"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="242.0498">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="247.3516" y2="247.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="262.3467">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="267.6484" y2="267.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="282.6436">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="287.9453" y2="287.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="302.9404">   </text><rect fill="none" height="101.4844" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="23.3506" x="298" y="206.7578"/><rect fill="#F1F1F1" height="15" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="30" x="412" y="164"/><rect fill="none" height="15" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="30" x="412" y="164"/><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="60.3057" x="390" y="197"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.7324" x="395" y="211.9951">☑ true</text><line style="stroke:#000000;stroke-width:1;" x1="390" x2="450.3057" y1="217.2969" y2="217.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50.3057" x="395" y="232.292">☐ false</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="60.3057" x="390" y="197"/><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="23.959" x="408" y="256"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.959" x="413" y="270.9951">-1</text><line style="stroke:#000000;stroke-width:1;" x1="408" x2="431.959" y1="276.2969" y2="276.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.9072" x="413" y="291.292">1</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="23.959" x="408" y="256"/><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="18.8867" x="410.5" y="315"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.5791" x="415.5" y="329.9951">a</text><line style="stroke:#000000;stroke-width:1;" x1="410.5" x2="429.3867" y1="335.2969" y2="335.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.8867" x="415.5" y="350.292">b</text><line style="stroke:#000000;stroke-width:1;" x1="410.5" x2="429.3867" y1="355.5938" y2="355.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="7.6973" x="415.5" y="370.5889">c</text><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="18.8867" x="410.5" y="315"/><rect fill="#F1F1F1" height="101.4844" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="55.7324" x="392" y="393.7578"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25.8125" x="397" y="408.7529">mix</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="414.0547" y2="414.0547"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.4014" x="397" y="429.0498">␀</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="434.3516" y2="434.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.7324" x="397" y="449.3467">☑ true</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="454.6484" y2="454.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.9072" x="397" y="469.6436">1</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="474.9453" y2="474.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="397" y="489.9404">   </text><rect fill="none" height="101.4844" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="55.7324" x="392" y="393.7578"/><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="37.5957" x="487" y="475.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="9.3105" x="492" y="490.3467">k</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.2852" x="511.3105" y="490.3467">v</text><line style="stroke:#000000;stroke-width:1;" x1="506.3105" x2="506.3105" y1="475.3516" y2="495.6484"/><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="37.5957" x="487" y="475.3516"/><path d="M217,88.5 L230,88.5 C250.5019,88.5 270.2149,76.5468 284.8208,64.5703" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M286.8606,66.9441 L286.6012,63.0405 L282.7811,62.1965 L290.7553,59.4709 L286.8606,66.9441" fill="#000000"/><ellipse cx="217" cy="88.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M341,99.5 L354,99.5 C371.3505,99.5 391.2862,99.5 404.5622,99.5" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M404.5622,102.5674 L406.8627,99.5 L404.5622,96.4326 L412.2306,99.5 L404.5622,102.5674" fill="#000000"/><ellipse cx="341" cy="99.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M341,159.5 L354,159.5 C368.1413,159.5 383.0092,154.507 394.9989,149.0758" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M396.3579,151.9002 L397.1172,148.0565 L393.6398,146.2513 L402.06,145.6782 L396.3579,151.9002" fill="#000000"/><ellipse cx="341" cy="159.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M217,129.5 L230,129.5 C239.3071,129.5 249.231,129.5 258.7907,129.5" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M258.7907,132.5279 L261.0616,129.5 L258.7907,126.4721 L266.3605,129.5 L258.7907,132.5279" fill="#000000"/><ellipse cx="217" cy="129.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,216.5 L323,216.5 C331.7951,216.5 380.8448,191.6305 405.4372,178.8679" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M406.8497,181.578 L407.4698,177.8085 L404.0247,176.1577 L412.2125,175.3367 L406.8497,181.578" fill="#000000"/><ellipse cx="310" cy="216.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,237.5 L323,237.5 C343.0609,237.5 364.9886,233.3046 382.8649,228.7568" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M383.6487,231.7152 L385.0837,228.169 L382.0812,225.7984 L390.2609,226.7974 L383.6487,231.7152" fill="#000000"/><ellipse cx="310" cy="237.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,257.5 L323,257.5 C350.6137,257.5 381.849,265.0822 401.1107,270.667" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M400.2428,273.5625 L403.2823,271.3179 L401.9785,267.7715 L408.3495,272.8366 L400.2428,273.5625" fill="#000000"/><ellipse cx="310" cy="257.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,277.5 L323,277.5 C357.9186,277.5 389.101,307.619 406.054,327.767" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M403.6987,329.6841 L407.4918,329.5335 L408.4093,325.8499 L410.8468,333.6553 L403.6987,329.6841" fill="#000000"/><ellipse cx="310" cy="277.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M436.5,485.5 L449.5,485.5 C459.3741,485.5 470.2276,485.5 479.7292,485.5" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M479.7292,488.5449 L482.0129,485.5 L479.7292,482.4551 L487.3415,485.5 L479.7292,488.5449" fill="#000000"/><ellipse cx="436.5" cy="485.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,296.5 L310,309.5 C310,358.445 353.951,399.5584 386.1632,423.1182" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M384.3732,425.6259 L388.044,424.4607 L387.9532,420.6104 L392.4326,427.5932 L384.3732,425.6259" fill="#000000"/><ellipse cx="310" cy="296.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M217,149.5 L230,149.5 C249.7076,149.5 277.9936,196.9399 294.8303,228.9366" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M292.0433,230.3826 L295.9148,231.0269 L297.6173,227.4906 L298.4452,235.9042 L292.0433,230.3826" fill="#000000"/><ellipse cx="217" cy="149.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="JSON" height="507px" preserveAspectRatio="xMidYMid meet" style="width:536px;height:507px;background:#FFFFFF;" version="1.1" viewBox="0 0 536 507" width="536px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#F1F1F1" height="142.0781" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="218.8232" x="10" y="17.4609"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="29.5313" x="15" y="32.4561">null</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.4014" x="133.6025" y="32.4561">␀</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="17.4609" y2="37.7578"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="37.7578" y2="37.7578"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="33.0586" x="15" y="52.7529">true</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.7324" x="133.6025" y="52.7529">☑ true</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="37.7578" y2="58.0547"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="58.0547" y2="58.0547"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38.165" x="15" y="73.0498">false</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50.3057" x="133.6025" y="73.0498">☐ false</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="58.0547" y2="78.3516"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="78.3516" y2="78.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108.6025" x="15" y="93.3467">JSON_Number</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="133.6025" y="93.3467">   </text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="78.3516" y2="98.6484"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="98.6484" y2="98.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="94.377" x="15" y="113.6436">JSON_String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25.1631" x="133.6025" y="113.6436">a
+bc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.8867" x="169.2041" y="113.6436">d</text><text fill="#008000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41.2822" x="182.541" y="113.6436">TBC...</text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="98.6484" y2="118.9453"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="118.9453" y2="118.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="97.1182" x="15" y="133.9404">JSON_Object</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="133.6025" y="133.9404">   </text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="118.9453" y2="139.2422"/><line style="stroke:#000000;stroke-width:1;" x1="10" x2="228.8232" y1="139.2422" y2="139.2422"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="89.127" x="15" y="154.2373">JSON_Array</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="133.6025" y="154.2373">   </text><line style="stroke:#000000;stroke-width:1;" x1="128.6025" x2="128.6025" y1="139.2422" y2="159.5391"/><rect fill="none" height="142.0781" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="218.8232" x="10" y="17.4609"/><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="37.9316" x="290.5" y="10"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.959" x="295.5" y="24.9951">-1</text><line style="stroke:#000000;stroke-width:1;" x1="290.5" x2="328.4316" y1="30.2969" y2="30.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27.3164" x="295.5" y="45.292">-1.1</text><line style="stroke:#000000;stroke-width:1;" x1="290.5" x2="328.4316" y1="50.5938" y2="50.5938"/><text fill="#008000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27.9316" x="295.5" y="65.5889">TBC</text><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="37.9316" x="290.5" y="10"/><rect fill="#F1F1F1" height="81.1875" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="87.4707" x="266" y="88.9063"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="19.9336" x="271" y="103.9014">{}</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="321.749" y="103.9014">   </text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="88.9063" y2="109.2031"/><line style="stroke:#000000;stroke-width:1;" x1="266" x2="353.4707" y1="109.2031" y2="109.2031"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="37.7686" x="271" y="124.1982">k_int</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26.7217" x="321.749" y="124.1982">123</text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="109.2031" y2="129.5"/><line style="stroke:#000000;stroke-width:1;" x1="266" x2="353.4707" y1="129.5" y2="129.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="38.2402" x="271" y="144.4951">k_str</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25.1631" x="321.749" y="144.4951">abc</text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="129.5" y2="149.7969"/><line style="stroke:#000000;stroke-width:1;" x1="266" x2="353.4707" y1="149.7969" y2="149.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="40.749" x="271" y="164.792">k_obj</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="321.749" y="164.792">   </text><line style="stroke:#000000;stroke-width:1;" x1="316.749" x2="316.749" y1="149.7969" y2="170.0938"/><rect fill="none" height="81.1875" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="87.4707" x="266" y="88.9063"/><rect fill="#F1F1F1" height="15" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="30" x="412" y="92"/><rect fill="none" height="15" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="30" x="412" y="92"/><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="37.5957" x="401" y="125.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="9.3105" x="406" y="140.3467">k</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.2852" x="425.3105" y="140.3467">v</text><line style="stroke:#000000;stroke-width:1;" x1="420.3105" x2="420.3105" y1="125.3516" y2="145.6484"/><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="37.5957" x="401" y="125.3516"/><rect fill="#F1F1F1" height="101.4844" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="23.3506" x="298" y="206.7578"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="221.7529">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="227.0547" y2="227.0547"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="242.0498">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="247.3516" y2="247.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="262.3467">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="267.6484" y2="267.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="282.6436">   </text><line style="stroke:#000000;stroke-width:1;" x1="298" x2="321.3506" y1="287.9453" y2="287.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="303" y="302.9404">   </text><rect fill="none" height="101.4844" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="23.3506" x="298" y="206.7578"/><rect fill="#F1F1F1" height="15" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="30" x="412" y="164"/><rect fill="none" height="15" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="30" x="412" y="164"/><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="60.3057" x="390" y="197"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.7324" x="395" y="211.9951">☑ true</text><line style="stroke:#000000;stroke-width:1;" x1="390" x2="450.3057" y1="217.2969" y2="217.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50.3057" x="395" y="232.292">☐ false</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="60.3057" x="390" y="197"/><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="23.959" x="408" y="256"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.959" x="413" y="270.9951">-1</text><line style="stroke:#000000;stroke-width:1;" x1="408" x2="431.959" y1="276.2969" y2="276.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.9072" x="413" y="291.292">1</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="23.959" x="408" y="256"/><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="18.8867" x="410.5" y="315"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.5791" x="415.5" y="329.9951">a</text><line style="stroke:#000000;stroke-width:1;" x1="410.5" x2="429.3867" y1="335.2969" y2="335.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.8867" x="415.5" y="350.292">b</text><line style="stroke:#000000;stroke-width:1;" x1="410.5" x2="429.3867" y1="355.5938" y2="355.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="7.6973" x="415.5" y="370.5889">c</text><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="18.8867" x="410.5" y="315"/><rect fill="#F1F1F1" height="101.4844" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="55.7324" x="392" y="393.7578"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25.8125" x="397" y="408.7529">mix</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="414.0547" y2="414.0547"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.4014" x="397" y="429.0498">␀</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="434.3516" y2="434.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45.7324" x="397" y="449.3467">☑ true</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="454.6484" y2="454.6484"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.9072" x="397" y="469.6436">1</text><line style="stroke:#000000;stroke-width:1;" x1="392" x2="447.7324" y1="474.9453" y2="474.9453"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13.3506" x="397" y="489.9404">   </text><rect fill="none" height="101.4844" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="55.7324" x="392" y="393.7578"/><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="37.5957" x="487" y="475.3516"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="9.3105" x="492" y="490.3467">k</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8.2852" x="511.3105" y="490.3467">v</text><line style="stroke:#000000;stroke-width:1;" x1="506.3105" x2="506.3105" y1="475.3516" y2="495.6484"/><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="37.5957" x="487" y="475.3516"/><path d="M217,88.5 L230,88.5 C250.5019,88.5 270.2149,76.5468 284.8208,64.5703" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M286.8606,66.9441 L286.6012,63.0405 L282.7811,62.1965 L290.7553,59.4709 L286.8606,66.9441" fill="#000000"/><ellipse cx="217" cy="88.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M341,99.5 L354,99.5 C371.3505,99.5 391.2862,99.5 404.5622,99.5" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M404.5622,102.5674 L406.8627,99.5 L404.5622,96.4326 L412.2306,99.5 L404.5622,102.5674" fill="#000000"/><ellipse cx="341" cy="99.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M341,159.5 L354,159.5 C368.1413,159.5 383.0092,154.507 394.9989,149.0758" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M396.3579,151.9002 L397.1172,148.0565 L393.6398,146.2513 L402.06,145.6782 L396.3579,151.9002" fill="#000000"/><ellipse cx="341" cy="159.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M217,129.5 L230,129.5 C239.3071,129.5 249.231,129.5 258.7907,129.5" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M258.7907,132.5279 L261.0616,129.5 L258.7907,126.4721 L266.3605,129.5 L258.7907,132.5279" fill="#000000"/><ellipse cx="217" cy="129.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,216.5 L323,216.5 C331.7951,216.5 380.8448,191.6305 405.4372,178.8679" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M406.8497,181.578 L407.4698,177.8085 L404.0247,176.1577 L412.2125,175.3367 L406.8497,181.578" fill="#000000"/><ellipse cx="310" cy="216.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,237.5 L323,237.5 C343.0609,237.5 364.9886,233.3046 382.8649,228.7568" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M383.6487,231.7152 L385.0837,228.169 L382.0812,225.7984 L390.2609,226.7974 L383.6487,231.7152" fill="#000000"/><ellipse cx="310" cy="237.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,257.5 L323,257.5 C350.6137,257.5 381.849,265.0822 401.1107,270.667" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M400.2428,273.5625 L403.2823,271.3179 L401.9785,267.7715 L408.3495,272.8366 L400.2428,273.5625" fill="#000000"/><ellipse cx="310" cy="257.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,277.5 L323,277.5 C357.9186,277.5 389.101,307.619 406.054,327.767" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M403.6987,329.6841 L407.4918,329.5335 L408.4093,325.8499 L410.8468,333.6553 L403.6987,329.6841" fill="#000000"/><ellipse cx="310" cy="277.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M436.5,485.5 L449.5,485.5 C459.3741,485.5 470.2276,485.5 479.7292,485.5" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M479.7292,488.5449 L482.0129,485.5 L479.7292,482.4551 L487.3415,485.5 L479.7292,488.5449" fill="#000000"/><ellipse cx="436.5" cy="485.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M310,296.5 L310,309.5 C310,358.445 353.951,399.5584 386.1632,423.1182" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M384.3732,425.6259 L388.044,424.4607 L387.9532,420.6104 L392.4326,427.5932 L384.3732,425.6259" fill="#000000"/><ellipse cx="310" cy="296.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/><path d="M217,149.5 L230,149.5 C249.7076,149.5 277.9936,196.9399 294.8303,228.9366" fill="none" style="stroke:#000000;stroke-width:1;stroke-dasharray:3,3;"/><path d="M292.0433,230.3826 L295.9148,231.0269 L297.6173,227.4906 L298.4452,235.9042 L292.0433,230.3826" fill="#000000"/><ellipse cx="217" cy="149.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1;"/></g></svg></div></p>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/docitsage" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://t.me/DocItSage" target="_blank" rel="noopener" title="t.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m115 168.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7.2-.7.3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2.5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3.6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6.5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7.5 3.2.6 6.5.4 9.8z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "content.tooltips", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  </body>
+</html>

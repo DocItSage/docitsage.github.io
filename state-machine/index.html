@@ -1,0 +1,474 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="В поиске данных, инсайтов, мониторинге и анализе актуальных навыков.">
+      
+      
+        <meta name="author" content="Максим Толстых aka DocItSage">
+      
+      
+        <link rel="canonical" href="https://docitsage.github.io/state-machine/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>Обзор - Максим Толстых</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Обзор - Максим Толстых" >
+      
+        <meta  property="og:description"  content="В поиске данных, инсайтов, мониторинге и анализе актуальных навыков." >
+      
+        <meta  property="og:image"  content="https://docitsage.github.io/assets/images/social/state-machine.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://docitsage.github.io/state-machine/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Обзор - Максим Толстых" >
+      
+        <meta  name="twitter:description"  content="В поиске данных, инсайтов, мониторинге и анализе актуальных навыков." >
+      
+        <meta  name="twitter:image"  content="https://docitsage.github.io/assets/images/social/state-machine.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href=".." title="Максим Толстых" class="md-header__button md-logo" aria-label="Максим Толстых" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Максим Толстых
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Обзор
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Переключить на тёмную тему"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Переключить на тёмную тему" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Переключить на светлую тему"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Переключить на светлую тему" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Максим Толстых" class="md-nav__button md-logo" aria-label="Максим Толстых" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Максим Толстых
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Обзор</h1>
+<p>Рассмотрим на примере состояний подарочной карты, которая может содержать два типа состояний:</p>
+<h2 id="state">Пример диаграммы состояний (State )</h2>
+<p>Состояния подарочной карты = доступность счета</p>
+<table>
+<thead>
+<tr>
+<th>status_id</th>
+<th>status</th>
+<th>status_description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Создан</td>
+<td>Номер сгенерен и занесен в базу данных</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Распределен</td>
+<td>Номер залит в УКМ, выставлен магазин</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Активен с балансом</td>
+<td>Сертификат числится активным на кассе и имеет положительный номинал</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Деактивирован</td>
+<td>Активация снята на кассе, но сертификат не новый, активировался ранее</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Заблокирован</td>
+<td>Принудительная блокировка сертификата, удаление из базы УКМ</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Погашен</td>
+<td>Активен, но баланс равен нулю</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Истёк</td>
+<td>Блокировка по сроку действия</td>
+</tr>
+</tbody>
+</table>
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="STATE" height="472px" preserveAspectRatio="xMidYMid meet" style="width:1208px;height:472px;background:#FFFFFF;" version="1.1" viewBox="0 0 1208 472" width="1208px" zoomAndPan="magnify" class="diagram"><defs/><g><g id="State1"><rect fill="#F1F1F1" height="50.2656" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="283.4785" x="7" y="92.98"/><line style="stroke:#181818;stroke-width:0.5;" x1="7" x2="290.4785" y1="119.2769" y2="119.2769"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53.1973" x="122.1406" y="110.9751">Создан</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="263.4785" x="12" y="135.4155">Номер сгенерен и занесен в базу данных</text></g><g id="State2"><rect fill="#F1F1F1" height="64.2344" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="273.0781" x="19.2" y="210.23"/><line style="stroke:#181818;stroke-width:0.5;" x1="19.2" x2="292.2781" y1="236.5269" y2="236.5269"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96.3799" x="107.5491" y="228.2251">Распределен</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="126.334" x="24.2" y="252.6655">Номер залит в ККМ,</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="253.0781" x="24.2" y="266.6343">с указанием идентификатора магазина</text></g><g id="State3"><rect fill="#F1F1F1" height="64.2344" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="284.0527" x="334.71" y="210.23"/><line style="stroke:#181818;stroke-width:0.5;" x1="334.71" x2="618.7627" y1="236.5269" y2="236.5269"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148.6201" x="402.4263" y="228.2251">Активен с балансом</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="264.0527" x="339.71" y="252.6655">Сертификат числится активным на кассе</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="215.8008" x="339.71" y="266.6343">и имеет положительный номинал</text></g><g id="State4"><rect fill="#F1F1F1" height="64.2344" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="302.5859" x="325.45" y="86"/><line style="stroke:#181818;stroke-width:0.5;" x1="325.45" x2="628.0359" y1="112.2969" y2="112.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114.625" x="419.4305" y="103.9951">Деактивирован</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="188.502" x="330.45" y="128.4355">Активация снята на кассе, но</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="282.5859" x="330.45" y="142.4043">сертификат не новый, активировался ранее</text></g><g id="State5"><rect fill="#F1F1F1" height="64.2344" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="295.9414" x="653.77" y="210.23"/><line style="stroke:#181818;stroke-width:0.5;" x1="653.77" x2="949.7114" y1="236.5269" y2="236.5269"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104.6924" x="749.3945" y="228.2251">Заблокирован</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="275.9414" x="658.77" y="252.6655">Принудительная блокировка сертификата,</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="144.457" x="658.77" y="266.6343">удаление из базы ККМ</text></g><g id="State6"><rect fill="#F1F1F1" height="50.2656" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="221.0176" x="366.23" y="334.46"/><line style="stroke:#181818;stroke-width:0.5;" x1="366.23" x2="587.2476" y1="360.7569" y2="360.7569"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65.6045" x="443.9365" y="352.4551">Погашен</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="201.0176" x="371.23" y="376.8955">Активен, но баланс равен нулю</text></g><g id="State7"><rect fill="#F1F1F1" height="50.2656" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="216.6172" x="984.43" y="217.21"/><line style="stroke:#181818;stroke-width:0.5;" x1="984.43" x2="1201.0472" y1="243.5069" y2="243.5069"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43.3945" x="1071.0413" y="235.2051">Истёк</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="196.6172" x="989.43" y="259.6455">Блокировка по сроку действия</text></g><ellipse cx="148.74" cy="16" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:0.5;"/><ellipse cx="476.74" cy="455.73" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:0.5;"/><ellipse cx="476.74" cy="455.73" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><g class="link" data-entity-1=".start." data-entity-2="State1" data-source-line="24" data-uid="lnk3" id="link_.start._State1"><path d="M148.74,26.23 C148.74,41.24 148.74,65.39 148.74,86.85" fill="none" id="*start*-to-State1" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="148.74,92.85,152.74,83.85,148.74,87.85,144.74,83.85,148.74,92.85" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State1" data-entity-2="State2" data-source-line="26" data-uid="lnk4" id="link_State1_State2"><path d="M150.14,143.55 C151.23,162.64 152.4179,183.3198 153.5979,203.9798" fill="none" id="State1-to-State2" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="153.94,209.97,157.4203,200.7566,153.6549,204.9781,149.4333,201.2127,153.94,209.97" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State2" data-entity-2="State3" data-source-line="27" data-uid="lnk5" id="link_State2_State3"><path d="M292.73,242.35 C306.63,242.35 314.52,242.35 328.42,242.35" fill="none" id="State2-to-State3" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="334.42,242.35,325.42,238.35,329.42,242.35,325.42,246.35,334.42,242.35" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State3" data-entity-2="State6" data-source-line="28" data-uid="lnk6" id="link_State3_State6"><path d="M465.23,274.84 C463.33,293.5 462.7615,310.8603 465.2315,328.1503" fill="none" id="State3-to-State6" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="466.08,334.09,468.767,324.6148,465.3729,329.1403,460.8474,325.7461,466.08,334.09" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State6" data-entity-2="State3" data-source-line="33" data-uid="lnk11" id="link_State6_State3"><path d="M488.02,334.09 C490.64,316.8 491.5857,299.4651 489.5657,280.8051" fill="none" id="State6-to-State3" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="488.92,274.84,485.9119,284.2182,489.4581,279.811,493.8654,283.3572,488.92,274.84" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State3" data-entity-2="State7" data-source-line="29" data-uid="lnk7" id="link_State3_State7"><path d="M566.03,209.81 C592.21,201.76 621.14,194.28 648.41,190.23 C783.22,170.22 821,165.7 955.07,190.23 C983.6,195.45 1008.3673,203.9684 1033.2473,214.4084" fill="none" id="State3-to-State7" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="1038.78,216.73,1032.0287,209.5592,1034.1695,214.7953,1028.9333,216.9361,1038.78,216.73" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State7" data-entity-2="State3" data-source-line="34" data-uid="lnk12" id="link_State7_State3"><path d="M1052.74,216.88 C1023.68,199.95 982.7,179.22 943.41,170.23 C820.65,142.14 783.79,146.77 660.07,170.23 C619.41,177.94 581.7077,192.0216 547.4777,207.3216" fill="none" id="State7-to-State3" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="542,209.77,551.8488,209.7492,546.5648,207.7297,548.5843,202.4456,542,209.77" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State4" data-entity-2="State3" data-source-line="31" data-uid="lnk9" id="link_State4_State3"><path d="M489.3833,156.5532 C491.4133,174.8032 490.75,191.74 488.7,209.98" fill="none" id="State4-backto-State3" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="488.72,150.59,485.7395,159.977,489.2728,155.5594,493.6904,159.0926,488.72,150.59" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State4" data-entity-2="State3" data-source-line="32" data-uid="lnk10" id="link_State4_State3"><path d="M465.43,150.59 C463.51,168.84 462.8787,185.7733 464.8087,204.0133" fill="none" id="State4-to-State3" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="465.44,209.98,468.4708,200.6091,464.9139,205.0078,460.5152,201.4509,465.44,209.98" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State3" data-entity-2="State5" data-source-line="35" data-uid="lnk13" id="link_State3_State5"><path d="M619.24,242.35 C630.65,242.35 636.06,242.35 647.46,242.35" fill="none" id="State3-to-State5" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="653.46,242.35,644.46,238.35,648.46,242.35,644.46,246.35,653.46,242.35" style="stroke:#181818;stroke-width:1;"/></g><g class="link" data-entity-1="State6" data-entity-2=".end." data-source-line="37" data-uid="lnk15" id="link_State6_.end."><path d="M476.74,384.84 C476.74,404.23 476.74,424.45 476.74,438.62" fill="none" id="State6-to-*end*" style="stroke:#181818;stroke-width:1;"/><polygon fill="#181818" points="476.74,444.62,480.74,435.62,476.74,439.62,472.74,435.62,476.74,444.62" style="stroke:#181818;stroke-width:1;"/></g></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="STATE" height="472px" preserveAspectRatio="xMidYMid meet" style="width:1208px;height:472px;background:#1B1B1B;" version="1.1" viewBox="0 0 1208 472" width="1208px" zoomAndPan="magnify" class="diagram"><defs/><g><rect fill="#1B1B1B" height="472" style="stroke:none;stroke-width:1;" width="1208" x="0" y="0"/><g id="State1"><rect fill="#313139" height="50.2656" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="283.4785" x="7" y="92.98"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="7" x2="290.4785" y1="119.2769" y2="119.2769"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53.1973" x="122.1406" y="110.9751">Создан</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="263.4785" x="12" y="135.4155">Номер сгенерен и занесен в базу данных</text></g><g id="State2"><rect fill="#313139" height="64.2344" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="273.0781" x="19.2" y="210.23"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="19.2" x2="292.2781" y1="236.5269" y2="236.5269"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96.3799" x="107.5491" y="228.2251">Распределен</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="126.334" x="24.2" y="252.6655">Номер залит в ККМ,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="253.0781" x="24.2" y="266.6343">с указанием идентификатора магазина</text></g><g id="State3"><rect fill="#313139" height="64.2344" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="284.0527" x="334.71" y="210.23"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="334.71" x2="618.7627" y1="236.5269" y2="236.5269"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148.6201" x="402.4263" y="228.2251">Активен с балансом</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="264.0527" x="339.71" y="252.6655">Сертификат числится активным на кассе</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="215.8008" x="339.71" y="266.6343">и имеет положительный номинал</text></g><g id="State4"><rect fill="#313139" height="64.2344" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="302.5859" x="325.45" y="86"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="325.45" x2="628.0359" y1="112.2969" y2="112.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114.625" x="419.4305" y="103.9951">Деактивирован</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="188.502" x="330.45" y="128.4355">Активация снята на кассе, но</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="282.5859" x="330.45" y="142.4043">сертификат не новый, активировался ранее</text></g><g id="State5"><rect fill="#313139" height="64.2344" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="295.9414" x="653.77" y="210.23"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="653.77" x2="949.7114" y1="236.5269" y2="236.5269"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104.6924" x="749.3945" y="228.2251">Заблокирован</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="275.9414" x="658.77" y="252.6655">Принудительная блокировка сертификата,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="144.457" x="658.77" y="266.6343">удаление из базы ККМ</text></g><g id="State6"><rect fill="#313139" height="50.2656" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="221.0176" x="366.23" y="334.46"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="366.23" x2="587.2476" y1="360.7569" y2="360.7569"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65.6045" x="443.9365" y="352.4551">Погашен</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="201.0176" x="371.23" y="376.8955">Активен, но баланс равен нулю</text></g><g id="State7"><rect fill="#313139" height="50.2656" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="216.6172" x="984.43" y="217.21"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="984.43" x2="1201.0472" y1="243.5069" y2="243.5069"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43.3945" x="1071.0413" y="235.2051">Истёк</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="196.6172" x="989.43" y="259.6455">Блокировка по сроку действия</text></g><ellipse cx="148.74" cy="16" fill="#222222" rx="10" ry="10" style="stroke:#222222;stroke-width:0.5;"/><ellipse cx="476.74" cy="455.73" fill="none" rx="11" ry="11" style="stroke:#222222;stroke-width:0.5;"/><ellipse cx="476.74" cy="455.73" fill="#222222" rx="6" ry="6" style="stroke:#222222;stroke-width:1;"/><g class="link" data-entity-1=".start." data-entity-2="State1" data-source-line="24" data-uid="lnk3" id="link_.start._State1"><path d="M148.74,26.23 C148.74,41.24 148.74,65.39 148.74,86.85" fill="none" id="*start*-to-State1" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="148.74,92.85,152.74,83.85,148.74,87.85,144.74,83.85,148.74,92.85" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State1" data-entity-2="State2" data-source-line="26" data-uid="lnk4" id="link_State1_State2"><path d="M150.14,143.55 C151.23,162.64 152.4179,183.3198 153.5979,203.9798" fill="none" id="State1-to-State2" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="153.94,209.97,157.4203,200.7566,153.6549,204.9781,149.4333,201.2127,153.94,209.97" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State2" data-entity-2="State3" data-source-line="27" data-uid="lnk5" id="link_State2_State3"><path d="M292.73,242.35 C306.63,242.35 314.52,242.35 328.42,242.35" fill="none" id="State2-to-State3" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="334.42,242.35,325.42,238.35,329.42,242.35,325.42,246.35,334.42,242.35" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State3" data-entity-2="State6" data-source-line="28" data-uid="lnk6" id="link_State3_State6"><path d="M465.23,274.84 C463.33,293.5 462.7615,310.8603 465.2315,328.1503" fill="none" id="State3-to-State6" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="466.08,334.09,468.767,324.6148,465.3729,329.1403,460.8474,325.7461,466.08,334.09" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State6" data-entity-2="State3" data-source-line="33" data-uid="lnk11" id="link_State6_State3"><path d="M488.02,334.09 C490.64,316.8 491.5857,299.4651 489.5657,280.8051" fill="none" id="State6-to-State3" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="488.92,274.84,485.9119,284.2182,489.4581,279.811,493.8654,283.3572,488.92,274.84" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State3" data-entity-2="State7" data-source-line="29" data-uid="lnk7" id="link_State3_State7"><path d="M566.03,209.81 C592.21,201.76 621.14,194.28 648.41,190.23 C783.22,170.22 821,165.7 955.07,190.23 C983.6,195.45 1008.3673,203.9684 1033.2473,214.4084" fill="none" id="State3-to-State7" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="1038.78,216.73,1032.0287,209.5592,1034.1695,214.7953,1028.9333,216.9361,1038.78,216.73" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State7" data-entity-2="State3" data-source-line="34" data-uid="lnk12" id="link_State7_State3"><path d="M1052.74,216.88 C1023.68,199.95 982.7,179.22 943.41,170.23 C820.65,142.14 783.79,146.77 660.07,170.23 C619.41,177.94 581.7077,192.0216 547.4777,207.3216" fill="none" id="State7-to-State3" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="542,209.77,551.8488,209.7492,546.5648,207.7297,548.5843,202.4456,542,209.77" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State4" data-entity-2="State3" data-source-line="31" data-uid="lnk9" id="link_State4_State3"><path d="M489.3833,156.5532 C491.4133,174.8032 490.75,191.74 488.7,209.98" fill="none" id="State4-backto-State3" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="488.72,150.59,485.7395,159.977,489.2728,155.5594,493.6904,159.0926,488.72,150.59" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State4" data-entity-2="State3" data-source-line="32" data-uid="lnk10" id="link_State4_State3"><path d="M465.43,150.59 C463.51,168.84 462.8787,185.7733 464.8087,204.0133" fill="none" id="State4-to-State3" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="465.44,209.98,468.4708,200.6091,464.9139,205.0078,460.5152,201.4509,465.44,209.98" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State3" data-entity-2="State5" data-source-line="35" data-uid="lnk13" id="link_State3_State5"><path d="M619.24,242.35 C630.65,242.35 636.06,242.35 647.46,242.35" fill="none" id="State3-to-State5" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="653.46,242.35,644.46,238.35,648.46,242.35,644.46,246.35,653.46,242.35" style="stroke:#E7E7E7;stroke-width:1;"/></g><g class="link" data-entity-1="State6" data-entity-2=".end." data-source-line="37" data-uid="lnk15" id="link_State6_.end."><path d="M476.74,384.84 C476.74,404.23 476.74,424.45 476.74,438.62" fill="none" id="State6-to-*end*" style="stroke:#E7E7E7;stroke-width:1;"/><polygon fill="#E7E7E7" points="476.74,444.62,480.74,435.62,476.74,439.62,472.74,435.62,476.74,444.62" style="stroke:#E7E7E7;stroke-width:1;"/></g></g></svg></div></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/docitsage" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://t.me/DocItSage" target="_blank" rel="noopener" title="t.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M256 8a248 248 0 1 0 0 496 248 248 0 1 0 0-496m115 168.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7.2-.7.3-3.1-1.2-4.4s-3.6-.8-5.1-.5c-2.2.5-37.1 23.5-104.6 69.1-9.9 6.8-18.9 10.1-26.9 9.9-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3.6-4.5 6.7-9 18.4-13.7 72.3-31.5 120.5-52.3 144.6-62.3 68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6.5 9.6 2.9 2 1.7 3.2 4.1 3.5 6.7.5 3.2.6 6.5.4 9.8z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "content.tooltips", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  </body>
+</html>
